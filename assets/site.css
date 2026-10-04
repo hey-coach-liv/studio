@@ -1,3 +1,8 @@
+/* Studio palette: mist, steel and navy only */
+body { background: var(--white); }
+.site-header { background: rgba(255, 255, 255, 0.92); }
+@media (max-width: 860px) { .site-nav { background: var(--white); } }
+
 /* Brand wordmark */
 .brand { display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none; line-height: 1; }
 .brand .script { font-size: 1.75rem; margin-bottom: -6px; margin-left: 4px; }
@@ -44,7 +49,7 @@
 .guide-cover .title { font-size: 19cqi; margin-top: 2%; }
 .guide-cover .sub { font-family: var(--font-body); font-size: 4.2cqi; letter-spacing: 0.04em; margin-top: 8%; text-transform: uppercase; }
 .guide-cover .cats { margin-top: auto; display: flex; gap: 3cqi; font-size: 2.8cqi; letter-spacing: 0.1em; }
-.guide-cover.is-soon { background: var(--dusty); }
+.guide-cover.is-soon { background: var(--navy); }
 .guide-cover .stamp {
   margin-top: auto;
   font-size: 3.4cqi;
@@ -55,7 +60,7 @@
 }
 
 /* Stats strip */
-.stats { background: var(--slate); color: var(--white); padding: 44px 0; }
+.stats { background: var(--navy); color: var(--white); padding: 44px 0; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
 .stat strong { display: block; font-family: var(--font-display); font-weight: 400; font-size: clamp(2.8rem, 5vw, 4rem); line-height: 1; }
 .stat span { display: block; margin-top: 8px; font-size: 0.68rem; line-height: 1.6; opacity: 0.9; }
@@ -79,7 +84,7 @@
 }
 .session-card:nth-child(4), .session-card:nth-child(5) { grid-column: span 3; }
 .session-card:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-hard); }
-.session-card .grade { color: var(--slate); }
+.session-card .grade { color: var(--navy); }
 .session-card h3 { font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
 .session-card p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
 .center-cta { display: flex; justify-content: center; margin-top: 48px; }
@@ -144,7 +149,7 @@
 .quote-box p { margin-bottom: 14px; }
 
 /* Letter / meet Olivia */
-.letter { background: var(--dusty); color: var(--ink); overflow: hidden; }
+.letter { background: var(--mist); color: var(--ink); overflow: hidden; }
 .letter-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(40px, 6vw, 88px); align-items: start; }
 .headshot { width: min(400px, 100%); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: 50% 30%; margin: 0 auto; box-shadow: 0 30px 60px -24px rgba(30, 58, 95, 0.6); }
 .offers-card { margin-top: 40px; border-top: 1.5px solid var(--ink); padding-top: 18px; }
@@ -158,7 +163,7 @@
 .letter .sign { font-family: var(--font-script); font-size: 2.6rem; margin: 6px 0 28px; }
 
 /* Closing CTA */
-.cta-band { background: var(--slate); color: var(--white); text-align: center; }
+.cta-band { background: var(--navy); color: var(--white); text-align: center; }
 .cta-band h2 { margin-bottom: 36px; }
 .cta-band .btn-row { justify-content: center; }
 .cta-band .mono { margin-top: 28px; opacity: 0.85; }
@@ -232,7 +237,7 @@
 .contents strong { font-weight: 400; font-size: 1.3rem; }
 .contents .pg { font-size: 1.3rem; }
 .contents span.mono { grid-column: 1 / -1; text-transform: none; letter-spacing: 0.02em; font-size: 0.78rem; color: var(--ink-soft); }
-.soon-block { background: var(--dusty); color: var(--white); border-radius: calc(var(--radius) + 8px); padding: clamp(32px, 5vw, 56px); display: grid; grid-template-columns: 0.5fr 1fr; gap: 40px; align-items: center; }
+.soon-block { background: var(--navy); color: var(--white); border-radius: calc(var(--radius) + 8px); padding: clamp(32px, 5vw, 56px); display: grid; grid-template-columns: 0.5fr 1fr; gap: 40px; align-items: center; }
 .soon-block .guide-cover { box-shadow: 0 20px 40px -20px rgba(30, 58, 95, 0.6); background: var(--steel); }
 .soon-block p { font-size: 1.1rem; max-width: 30rem; }
 
