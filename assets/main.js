@@ -4,7 +4,7 @@ const LINKS = {
   book30: "https://calendly.com/oyong-work/30min",
   book60: "mailto:oyong.partner@gmail.com?subject=Booking%20a%2060-minute%20session",
   interviewGuide: "mailto:oyong.partner@gmail.com?subject=Interview%20Guide%20order",
-  waitlist: "mailto:oyong.partner@gmail.com?subject=First%20Year%20Guide%20waitlist",
+  waitlist: "https://forms.gle/zMGZJQcMr5tQE6yZ8",
   pkgInterview: "mailto:oyong.partner@gmail.com?subject=Interview%20Ready%20package",
   pkgEssentials: "mailto:oyong.partner@gmail.com?subject=Application%20Essentials%20package",
   pkgJourney: "mailto:oyong.partner@gmail.com?subject=Full%20Application%20Journey%20package",
