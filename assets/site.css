@@ -121,6 +121,8 @@ body { background: var(--white); }
 }
 .accept.queens { --school: var(--queens); }
 .accept.western { --school: var(--western); }
+.accept.pharm { --school: #f5c644; }
+.accept.pharm .school, .accept.pharm cite { color: var(--ink); }
 .accept blockquote { margin: 0; padding: 32px 36px; font-size: 1.05rem; }
 .accept blockquote p { margin-bottom: 18px; }
 .accept mark { background: color-mix(in srgb, var(--school) 16%, white); color: inherit; padding: 0 3px; }
