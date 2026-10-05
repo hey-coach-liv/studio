@@ -446,3 +446,24 @@ img.promo { height: auto; }
 .promo-cards .promo:hover { transform: rotate(0) translateY(-4px); }
 @media (max-width: 960px) { .cta-grid { grid-template-columns: 1fr; } .promo-cards { justify-content: flex-start; } .promo { width: min(44vw, 190px); } }
 .cta-split h2 { font-size: clamp(3rem, 6.4vw, 6rem); }
+
+/* Thank-you notes pinboard */
+.pinboard { margin-top: clamp(56px, 8vw, 88px); background: var(--mist); border-radius: calc(var(--radius) + 8px); padding: clamp(28px, 4vw, 48px); background-image: radial-gradient(rgba(30, 58, 95, 0.12) 1.2px, transparent 1.2px); background-size: 18px 18px; }
+.pinboard-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; margin-bottom: 28px; }
+.pinboard-head h3 { font-size: clamp(2rem, 4vw, 3rem); }
+.pinboard-head .mono { color: var(--ink-soft); font-size: 0.7rem; }
+.pins { display: grid; grid-template-columns: 1.15fr 0.9fr 1fr 0.95fr; gap: 26px; align-items: start; }
+.pin { position: relative; margin: 0; background: var(--white); padding: 10px 10px 14px; border-radius: 4px; box-shadow: 0 16px 30px -18px rgba(21, 21, 21, 0.55); transition: transform 0.2s ease; }
+.pin::before { content: ""; position: absolute; top: -9px; left: 50%; width: 18px; height: 18px; margin-left: -9px; border-radius: 50%; background: var(--accent); box-shadow: inset -3px -3px 0 rgba(0, 0, 0, 0.18), 0 3px 4px rgba(0, 0, 0, 0.25); }
+.pin img { display: block; width: 100%; height: auto; border-radius: 2px; }
+.pin:nth-child(1) { transform: rotate(-3deg); margin-top: 18px; }
+.pin:nth-child(2) { transform: rotate(2deg); }
+.pin:nth-child(2)::before { background: var(--steel); }
+.pin:nth-child(3) { transform: rotate(-1.5deg); margin-top: 30px; }
+.pin:nth-child(3)::before { background: #f5c644; }
+.pin:nth-child(4) { transform: rotate(3deg); margin-top: 8px; }
+.pin:nth-child(4)::before { background: var(--navy); }
+.pin:hover { transform: rotate(0) scale(1.03); z-index: 2; }
+@media (max-width: 960px) { .pins { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pins { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; } }
+.pin { display: block; } .pinboard-head .mono::after { content: " · click to enlarge"; }
