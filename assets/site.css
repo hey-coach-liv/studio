@@ -318,3 +318,6 @@ body { background: var(--white); }
 .video .caption .mono { white-space: nowrap; font-size: 0.66rem; }
 @media (max-width: 900px) { .reel-grid { grid-template-columns: 1fr; } }
 .reel-feature { padding-top: 0; }
+.reel-feature .video .frame { padding: 12px 12px 0; background: var(--navy); aspect-ratio: auto; }
+.reel-feature .video .thumb { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 8px; }
+.reel-feature .video .play { top: 24px; left: 24px; }
