@@ -7,11 +7,14 @@
 
   const ctx = canvas.getContext("2d");
   const hint = document.getElementById("pad-hint");
+  const fileInput = document.getElementById("drawing-file");
   const error = document.getElementById("form-error");
   const state = { tool: "pencil", color: "#151515", size: 3, drawing: false, dirty: false, last: null };
   const history = [];
 
-  const sent = document.getElementById("sent-note");
+  if (new URLSearchParams(location.search).get("sent")) {
+    document.getElementById("sent-note").hidden = false;
+  }
 
   function resize() {
     const snapshot = state.dirty ? canvas.toDataURL() : null;
@@ -160,7 +163,15 @@
     hint.hidden = false;
   });
 
-  function drawingBlob() {
+  form.addEventListener("submit", (e) => {
+    const message = form.elements.Message.value.trim();
+    if (!state.dirty && !message) {
+      e.preventDefault();
+      error.hidden = false;
+      return;
+    }
+    if (!state.dirty) return;
+    e.preventDefault();
     const out = document.createElement("canvas");
     out.width = canvas.width;
     out.height = canvas.height;
@@ -168,50 +179,16 @@
     octx.fillStyle = "#ffffff";
     octx.fillRect(0, 0, out.width, out.height);
     octx.drawImage(canvas, 0, 0);
-    return new Promise((resolve) => out.toBlob(resolve, "image/png"));
-  }
-
-  function resetPad() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    history.length = 0;
-    state.dirty = false;
-    hint.hidden = false;
-  }
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const message = form.elements.Message.value.trim();
-    if (!state.dirty && !message) {
-      error.textContent = "Add a drawing or a message before sending.";
-      error.hidden = false;
-      return;
-    }
-    const button = form.querySelector('button[type="submit"]');
-    const label = button.innerHTML;
-    button.disabled = true;
-    button.textContent = "Sending...";
-    error.hidden = true;
-
-    const data = new FormData(form);
-    data.delete("_next");
-    data.delete("attachment");
-    if (state.dirty) data.append("attachment", await drawingBlob(), "drawing.png");
-
-    try {
-      const response = await fetch(form.dataset.endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok || String(result.success) === "false") throw new Error(result.message || "Send failed");
-      form.reset();
-      resetPad();
-      sent.hidden = false;
-      sent.scrollIntoView({ behavior: "smooth", block: "center" });
-    } catch (err) {
-      error.textContent = "Sorry, that didn't send. Please try again or email oyong.partner@gmail.com.";
-      error.hidden = false;
-    } finally {
-      button.disabled = false;
-      button.innerHTML = label;
-    }
+    out.toBlob((blob) => {
+      try {
+        const transfer = new DataTransfer();
+        transfer.items.add(new File([blob], "drawing.png", { type: "image/png" }));
+        fileInput.files = transfer.files;
+      } catch (err) {
+        // Older browsers cannot attach files from script; the message still sends.
+      }
+      form.submit();
+    }, "image/png");
   });
 
   window.addEventListener("resize", resize);
