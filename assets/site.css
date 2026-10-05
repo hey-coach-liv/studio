@@ -370,3 +370,13 @@ body { background: var(--white); }
 }
 @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } .canvas-wrap { aspect-ratio: 1; } }
 .doc-open { margin-top: auto; padding-top: 8px; color: var(--navy) !important; }
+
+/* Success Stories hero reel */
+.hero-reel { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
+.hero-video { width: 250px; justify-self: end; transform: rotate(2deg); }
+.hero-video:hover { transform: rotate(0) translate(-3px, -3px); }
+.hero-video .frame { padding: 10px 10px 0; background: var(--navy); aspect-ratio: auto; }
+.hero-video .thumb { display: block; width: 100%; height: auto; border-radius: 8px; object-fit: contain; }
+.hero-video .play { top: 20px; left: 20px; }
+.hero-video .label { font-size: 1.6rem; }
+@media (max-width: 760px) { .hero-reel { grid-template-columns: 1fr; } .hero-video { justify-self: start; width: 220px; } }
