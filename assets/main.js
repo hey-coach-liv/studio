@@ -2,7 +2,7 @@
 // When Stan Store is live, paste each product link below. Nothing else needs editing.
 const LINKS = {
   book30: "https://calendly.com/oyong-work/30min",
-  book60: "mailto:oyong.partner@gmail.com?subject=Booking%20a%2060-minute%20session",
+  book60: "https://calendly.com/oyong-hba2027-ivey/60-min",
   interviewGuide: "mailto:oyong.partner@gmail.com?subject=Interview%20Guide%20order",
   waitlist: "https://forms.gle/zMGZJQcMr5tQE6yZ8",
   pkgInterview: "mailto:oyong.partner@gmail.com?subject=Interview%20Ready%20package",
