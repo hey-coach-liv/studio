@@ -432,3 +432,17 @@ body { background: var(--white); }
 .bubble::before { content: ""; position: absolute; bottom: 0; left: -7px; width: 20px; height: 18px; background: var(--white); border-bottom-right-radius: 16px 14px; }
 .bubble::after { content: ""; position: absolute; bottom: 0; left: -26px; width: 26px; height: 18px; background: var(--mist); border-bottom-right-radius: 10px; }
 @media (max-width: 960px) { .bubble { left: -24px; } }
+
+/* Home CTA with promo cards */
+.cta-split { text-align: left; }
+.cta-grid { display: grid; grid-template-columns: 1fr auto; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.cta-split .btn-row { justify-content: flex-start; }
+.promo-cards { display: flex; gap: 18px; }
+.promo { display: block; width: 190px; border-radius: 14px; overflow: hidden; box-shadow: 0 24px 40px -18px rgba(0, 0, 0, 0.55); border: 3px solid var(--white); transition: transform 0.2s ease; }
+.promo img { display: block; width: 100%; height: auto; }
+img.promo { height: auto; }
+.promo-cards .promo:first-child { transform: rotate(-3deg); }
+.promo-cards .promo:last-child { transform: rotate(3deg) translateY(14px); }
+.promo-cards .promo:hover { transform: rotate(0) translateY(-4px); }
+@media (max-width: 960px) { .cta-grid { grid-template-columns: 1fr; } .promo-cards { justify-content: flex-start; } .promo { width: min(44vw, 190px); } }
+.cta-split h2 { font-size: clamp(3rem, 6.4vw, 6rem); }
