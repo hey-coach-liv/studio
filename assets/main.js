@@ -3,7 +3,7 @@
 const LINKS = {
   book30: "https://calendly.com/oyong-work/30min",
   book60: "https://calendly.com/oyong-hba2027-ivey/60-min",
-  interviewGuide: "mailto:oyong.partner@gmail.com?subject=Interview%20Guide%20order",
+  interviewGuide: "https://docs.google.com/forms/d/e/1FAIpQLScK9f9WobmKw14OIl_dAoKfqgy4DWO1CE5s0FlfxVptmKbl6Q/viewform",
   waitlist: "https://forms.gle/zMGZJQcMr5tQE6yZ8",
   pkgInterview: "mailto:oyong.partner@gmail.com?subject=Interview%20Ready%20package",
   pkgEssentials: "mailto:oyong.partner@gmail.com?subject=Application%20Essentials%20package",
