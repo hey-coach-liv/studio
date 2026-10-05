@@ -18,7 +18,7 @@ body { background: var(--white); }
 .hero .price-note { margin-top: 22px; color: var(--ink-soft); }
 .hero-visual { position: relative; justify-self: center; width: min(360px, 100%); }
 .hero-visual .guide-cover { transform: rotate(3deg); }
-.hero-visual .scribble { width: 122%; left: -11%; top: 24%; height: 42%; }
+.hero-visual .scribble { width: 118%; left: -9%; top: 37%; height: 40%; }
 .hero-visual .tag {
   position: absolute;
   left: -46px; bottom: -34px;
@@ -381,3 +381,10 @@ body { background: var(--white); }
 .hero-video .label { font-size: 1.6rem; }
 @media (max-width: 760px) { .hero-reel { grid-template-columns: 1fr; } .hero-video { justify-self: start; width: 220px; } }
 .school-logo { width: min(250px, 82%); height: auto; margin: 0 auto 4px; background: var(--white); padding: 16px 20px; border-radius: 12px; box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.5); }
+
+/* Interview Guide cover image */
+.guide-img { display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 30px 60px -20px rgba(30, 58, 95, 0.55); }
+.hero-visual .guide-img { transform: rotate(3deg); }
+.product-detail .guide-img { position: sticky; top: 110px; }
+@media (max-width: 960px) { .product-detail .guide-img { position: static; max-width: 340px; } }
+@media (max-width: 600px) { .product-card .guide-img { max-width: 220px; } }
