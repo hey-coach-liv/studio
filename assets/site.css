@@ -279,16 +279,16 @@ body { background: var(--white); }
 @keyframes slide { to { transform: translateX(-50%); } }
 .t-card {
   margin: 0;
-  width: 360px;
+  width: 500px;
   flex: none;
   background: var(--white);
   border: 1.5px solid var(--ink);
   border-radius: var(--radius);
   box-shadow: 5px 5px 0 var(--navy);
-  padding: 26px 26px 22px;
+  padding: 22px 24px 18px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 .t-tag { align-self: flex-start; background: var(--navy); color: var(--white); border-radius: 999px; padding: 7px 14px; font-size: 0.74rem; }
 .t-card blockquote { margin: 0; font-size: 1.14rem; line-height: 1.55; flex: 1; }
@@ -297,7 +297,7 @@ body { background: var(--white); }
 .t-logo[src*="rotman"] { height: 28px; margin: 6px 0; }
 .t-banks { display: flex; align-items: center; gap: 14px; padding-top: 14px; border-top: 1px solid var(--mist); }
 .t-banks img { height: 26px; width: auto; max-width: 64px; object-fit: contain; }
-@media (max-width: 600px) { .t-card { width: 290px; } .t-banks { gap: 10px; } .t-banks img { height: 22px; } }
+@media (max-width: 600px) { .t-card { width: 86vw; } .t-banks { gap: 10px; } .t-banks img { height: 22px; } }
 @media (prefers-reduced-motion: reduce) {
   .slider { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
   .slider-track { animation: none; }
