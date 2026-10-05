@@ -267,3 +267,33 @@ body { background: var(--white); }
   .accept blockquote { padding: 24px; }
   .toc li { grid-template-columns: 1fr; }
 }
+
+/* Student wins slider */
+.wins { background: var(--mist); overflow: hidden; }
+.slider { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.slider-track { display: flex; width: max-content; animation: slide 90s linear infinite; }
+.slider:hover .slider-track, .slider:focus-within .slider-track { animation-play-state: paused; }
+.slider-set { display: flex; gap: 24px; padding: 8px 12px 16px; }
+@keyframes slide { to { transform: translateX(-50%); } }
+.t-card {
+  margin: 0;
+  width: 340px;
+  flex: none;
+  background: var(--white);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 5px 5px 0 var(--navy);
+  padding: 26px 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.t-tag { align-self: flex-start; background: var(--navy); color: var(--white); border-radius: 999px; padding: 6px 12px; font-size: 0.66rem; }
+.t-card blockquote { margin: 0; font-size: 1rem; line-height: 1.55; flex: 1; }
+.t-card figcaption { color: var(--steel); font-size: 0.66rem; letter-spacing: 0.1em; text-transform: none; }
+@media (max-width: 600px) { .t-card { width: 280px; } }
+@media (prefers-reduced-motion: reduce) {
+  .slider { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .slider-track { animation: none; }
+  .slider-set[aria-hidden="true"] { display: none; }
+}
