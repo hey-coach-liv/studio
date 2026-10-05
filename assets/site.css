@@ -467,3 +467,10 @@ img.promo { height: auto; }
 @media (max-width: 960px) { .pins { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .pins { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; } }
 .pin { display: block; } .pinboard-head .mono::after { content: " · click to enlarge"; }
+
+/* Questions? email icon */
+.q-line { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.cta-split .q-line { justify-content: flex-start; }
+.q-mail { display: grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid currentColor; border-radius: 50%; color: inherit; transition: transform 0.15s ease, background 0.15s ease; }
+.q-mail svg { width: 19px; height: 19px; }
+.q-mail:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.15); }
