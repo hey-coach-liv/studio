@@ -388,3 +388,26 @@ body { background: var(--white); }
 .product-detail .guide-img { position: sticky; top: 110px; }
 @media (max-width: 960px) { .product-detail .guide-img { position: static; max-width: 340px; } }
 @media (max-width: 600px) { .product-card .guide-img { max-width: 220px; } }
+
+/* Compact top banners */
+.hero { padding: clamp(28px, 3.5vw, 44px) 0; }
+.hero h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); margin-bottom: 14px; }
+.hero h1 > span { display: inline; }
+.hero h1 .script { margin: 0 0.12em; }
+.hero .eyebrow { margin-bottom: 12px; }
+.hero .lede { margin-bottom: 18px; }
+.hero .price-note { margin-top: 12px; }
+.hero-visual { width: min(190px, 100%); }
+.hero-visual .tag { font-size: 1.4rem; left: -40px; bottom: -22px; }
+.page-hero { padding: clamp(36px, 4.5vw, 64px) 0; }
+.page-hero .eyebrow { margin-bottom: 10px; }
+.page-hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.8rem); }
+.page-hero h1 > span { display: inline; }
+.page-hero h1 .script { margin: 0 0.12em; }
+.page-hero .lede { margin-top: 12px; }
+.page-hero .btn-row { margin-top: 16px !important; }
+.hero-video { width: 120px; }
+.hero-video .label { font-size: 1.1rem; }
+.hero-video .caption { padding: 10px 12px 12px; }
+.hero-video .label { white-space: nowrap; }
+.hero-video .caption .mono { display: none; }
