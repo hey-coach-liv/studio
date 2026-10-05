@@ -310,7 +310,7 @@ body { background: var(--white); }
 .reel-grid .lede { margin-bottom: 32px; font-style: italic; }
 .video { display: flex; flex-direction: column; border-radius: var(--radius); overflow: hidden; background: var(--navy); color: var(--white); text-decoration: none; max-width: 400px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .video:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--steel); }
-.video .frame { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--mist); }
+.video .frame { position: relative; aspect-ratio: 592 / 701; overflow: hidden; background: var(--mist); }
 .video .thumb { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
 .video .play { position: absolute; top: 14px; left: 14px; width: 44px; height: 44px; border-radius: 50%; background: rgba(21, 21, 21, 0.55); color: var(--white); display: grid; place-items: center; }
 .video .caption { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 16px 20px 18px; }
