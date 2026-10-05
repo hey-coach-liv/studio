@@ -380,3 +380,4 @@ body { background: var(--white); }
 .hero-video .play { top: 20px; left: 20px; }
 .hero-video .label { font-size: 1.6rem; }
 @media (max-width: 760px) { .hero-reel { grid-template-columns: 1fr; } .hero-video { justify-self: start; width: 220px; } }
+.school-logo { width: min(250px, 82%); height: auto; margin: 0 auto 4px; background: var(--white); padding: 16px 20px; border-radius: 12px; box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.5); }
