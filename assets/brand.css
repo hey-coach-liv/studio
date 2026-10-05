@@ -191,3 +191,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Pencil cursor */
+html, body { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M10 6 L26 22 L22 26 L6 10 Z' fill='%23f5c644' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M26 22 L29 25 L25 29 L22 26 Z' fill='%23f2a7bc' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M2 2 L10 6 L6 10 Z' fill='%23f3d9b1' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M2 2 L5.5 3.8 L3.8 5.5 Z' fill='%23151515'/></svg>") 2 2, auto; }
+a, button, .btn, [role="button"], summary, label { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M10 6 L26 22 L22 26 L6 10 Z' fill='%23f5c644' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M26 22 L29 25 L25 29 L22 26 Z' fill='%23ff4a1c' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M2 2 L10 6 L6 10 Z' fill='%23f3d9b1' stroke='%23151515' stroke-width='1.5' stroke-linejoin='round'/><path d='M2 2 L5.5 3.8 L3.8 5.5 Z' fill='%23151515'/></svg>") 2 2, pointer; }
