@@ -323,7 +323,7 @@ body { background: var(--white); }
 .reel-feature .video .play { top: 24px; left: 24px; }
 
 /* Free resources */
-.doc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.doc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .doc-card { display: flex; flex-direction: column; gap: 10px; background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius); padding: 28px; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .doc-card:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--navy); }
 .doc-card.is-soon { border-style: dashed; pointer-events: none; }
