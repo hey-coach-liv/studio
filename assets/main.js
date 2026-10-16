@@ -8,6 +8,8 @@ const LINKS = {
   pkgInterview: "mailto:oyong.partner@gmail.com?subject=Interview%20Ready%20package",
   pkgEssentials: "mailto:oyong.partner@gmail.com?subject=Application%20Essentials%20package",
   pkgJourney: "mailto:oyong.partner@gmail.com?subject=Full%20Application%20Journey%20package",
+  pkgAeoReview: "mailto:oyong.partner@gmail.com?subject=Ivey%20AEO%20Application%20Full%20Review",
+  pkgAeoCompanion: "mailto:oyong.partner@gmail.com?subject=AEO%20Application%20Companion%20add-on",
   portfolio: "/",
   instagram: "https://www.instagram.com/hey.coach.liv/",
   tiktok: "https://www.tiktok.com/@hey.coach.liv",
